@@ -136,7 +136,7 @@ select lenguaje from usuarios_lenguajes where edad >= 30 order by length(lenguaj
 
 -- Ejercicio 35: Seleccionar los usuarios y mostrar la diferencia entre su edad y la edad promedio de todos los usuarios
 -- Tu respuesta aquí
-
+select nombre, ABS(edad-(select avg(edad) from usuarios_lenguajes)) as diferencia from usuarios_lenguajes
 
 -- Ejercicio 36: Contar cuántos usuarios tienen un lenguaje asociado que contiene la palabra 'Script'.
 -- Tu respuesta aquí
